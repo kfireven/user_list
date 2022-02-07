@@ -1,0 +1,9 @@
+@import '../../styles/variables/variables.scss';
+
+.search-table {
+    padding-top: 2%;
+    height: 90%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: $defualt-blue $defualt-blueLight;
+}

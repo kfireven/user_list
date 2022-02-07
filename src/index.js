@@ -2,14 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { store } from './app/store';
+import store from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+
+import UsersList from './components/UsersList/UsersList';
+import UserPosts from './components/UserPosts/UserPosts';
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+    <App>
+    <BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<UsersList/>}/>
+      <Route exact path="/userPosts" element={<UserPosts/>}/>
+    </Routes>
+    </BrowserRouter>
+    </App>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

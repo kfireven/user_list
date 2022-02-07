@@ -1,0 +1,21 @@
+@import '../../styles/variables/variables.scss';
+
+.userPosts {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    height: 75%;
+    width: 80%;
+    border: 2px solid $defualt-blue;
+    border-radius: 10px;
+}
+
+.userPosts-form {
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: $defualt-blue $defualt-blueLight;
+    padding: 0px 10px 0px;
+}

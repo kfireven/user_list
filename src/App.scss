@@ -1,0 +1,22 @@
+@import './styles/bootstrap.min.css';
+@import './styles/variables/variables.scss';
+
+
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+    background-color: $defualt-blue;
+    width: 100%;
+}
+
+.navbarTitle {
+  color: $defualt-blueLight;
+  font-size: xxx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
